@@ -821,6 +821,8 @@ The application exposes RESTful APIs for managing hospitals, doctors, patients, 
 
 Each module provides standard CRUD operations, while the Doctor module additionally provides an advanced search API supporting partial search, filtering, pagination, and sorting.
 
+<br />
+
 ## Hospital APIs
 
 Provides CRUD APIs to manage hospitals.
@@ -834,6 +836,8 @@ Provides CRUD APIs to manage hospitals.
 | PUT | `/hospitals/{hospitalCode}` | Update hospital details. | `PUT /hospitals/HOS-000001` |
 | DELETE | `/hospitals/{hospitalCode}` | Delete a hospital. | `DELETE /hospitals/HOS-000001` |
 | GET | `/hospitals` | Retrieve all hospitals with pagination and sorting. | `GET /hospitals?page=0&size=10&sort=hospitalName,asc` |
+
+<br />
 
 ## Doctor APIs
 
@@ -982,6 +986,20 @@ Examples
 | Find inactive doctors | `GET /doctors/search?active=false&page=0&size=10` |
 | Search doctors in a hospital | `GET /doctors/search?hospitalCode=HOS-000001&page=0&size=10` |
 | Search doctors by specialization and rating | `GET /doctors/search?specialization=Cardiology&minRating=4.8&page=0&size=10` |
+<br />
+<img width="3196" height="1894" alt="image" src="https://github.com/user-attachments/assets/013458b4-29e4-4118-b7a8-e382af0512b3" />
+<br /><br />
+<img width="3196" height="1902" alt="image" src="https://github.com/user-attachments/assets/c1d871c7-e8ad-441c-ac4f-fa2cb09f6ab6" />
+<br /><br />
+<img width="3206" height="1876" alt="image" src="https://github.com/user-attachments/assets/46d97423-03d4-46c9-a9f3-99acdd358d72" />
+<br /><br />
+<img width="3226" height="1898" alt="image" src="https://github.com/user-attachments/assets/dd729240-4629-4bc9-b61e-7a69c887fa47" />
+<br /><br />
+<img width="3212" height="1548" alt="image" src="https://github.com/user-attachments/assets/97bb2fe0-1ac2-4bb5-b008-c84b9e5a1205" />
+<br /><br />
+<img width="3226" height="1894" alt="image" src="https://github.com/user-attachments/assets/111ddb0b-1d6c-4a2d-8f86-733f254ade3c" />
+<br /><br />
+<img width="3222" height="1894" alt="image" src="https://github.com/user-attachments/assets/a1a7905b-ba78-42d9-8333-ddd3a8822f40" />
 
 ### Notes
 
@@ -994,6 +1012,7 @@ Examples
 - If the sort direction is omitted, **ascending** order is used by default.
 - A separate count query is executed to efficiently calculate total pages.
 
+<br />
 
 ## Patient APIs
 
@@ -1009,6 +1028,7 @@ Provides CRUD APIs to manage patients.
 | DELETE | `/patients/{patientCode}` | Delete a patient. | `DELETE /patients/PAT-000001` |
 | GET | `/patients` | Retrieve all patients with pagination and sorting. | `GET /patients?page=0&size=10&sort=firstName,asc` |
 
+<br />
 
 ## Appointment APIs
 
