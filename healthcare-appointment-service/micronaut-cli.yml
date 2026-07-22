@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.sirajchaudhary.healthcare
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, cache-caffeine, data, data-jpa, graalvm, hibernate-validator, http-client-test, java, java-application, jdbc-hikari, junit, logback, management, maven, maven-enforcer-plugin, micronaut-aot, micronaut-http-validation, micronaut-processing-compiler-args, netty-server, openapi, postgres, properties, readme, serialization-jackson, shade, static-resources, test-resources]

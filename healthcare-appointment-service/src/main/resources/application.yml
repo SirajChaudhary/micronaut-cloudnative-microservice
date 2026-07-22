@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+micronaut:
+  application:
+    name: healthcare-appointment-service
+
+  # Swagger UI
+  router:
+    static-resources:
+      swagger:
+        enabled: true
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+
+      swagger-ui:
+        enabled: true
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/healthcaredb
+    username: postgres
+    password: siraj123
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+        show_sql: true
+        format_sql: true
+
+swagger-ui:
+  enabled: true
+  path: /swagger-ui
